@@ -41,6 +41,7 @@ class Application:
         self.btnNot.place(x=randint(180, 330), y=randint(100, 220), anchor=CENTER)
 
     def changeTxt(self):
+        self.btnNot["command"] = False
         self.titulo["text"] = "EU SEMPRE SOUBE!!!"
         root.after(900, root.destroy)
 
